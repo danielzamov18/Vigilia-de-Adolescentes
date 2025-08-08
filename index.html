@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigilia de Adolescentes - Centro Cristiano de Grecia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div id="particles"></div>
+    
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Portada -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/82493729-cd0f-42f0-93be-23469522b7e9.png" alt="Centro Cristiano de Grecia" class="hero-image">
+                <h1 class="hero-title">Vigilia de Adolescentes 2025</h1>
+                <h2 class="hero-subtitle">Centro Cristiano de Grecia</h2>
+                
+                <!-- Contador regresivo -->
+                <div class="countdown-container">
+                    <h3 class="countdown-title">¡Faltan:</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Días</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Horas</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Minutos</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="hero-button" class="btn btn--primary btn--hero">
+                    Ver Información del Evento
+                </button>
+            </div>
+        </section>
+        
+        <!-- Información del evento -->
+        <section id="event-info" class="event-section hidden">
+            <div class="event-content">
+                <h2 class="section-title">Información del Evento</h2>
+                <div class="event-details">
+                    <div class="event-detail">
+                        <div class="event-icon">📅</div>
+                        <div class="event-text">
+                            <h3>Fecha</h3>
+                            <p>5 de Septiembre, 2025</p>
+                        </div>
+                    </div>
+                    <div class="event-detail">
+                        <div class="event-icon">🕰️</div>
+                        <div class="event-text">
+                            <h3>Hora</h3>
+                            <p>8:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="event-detail">
+                        <div class="event-icon">📍</div>
+                        <div class="event-text">
+                            <h3>Lugar</h3>
+                            <p>Centro Cristiano de Grecia<br>Alajuela, Costa Rica</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="activities-button" class="btn btn--secondary">
+                    Ver Actividades
+                </button>
+            </div>
+        </section>
+        
+        <!-- Actividades -->
+        <section id="activities" class="activities-section hidden">
+            <div class="activities-content">
+                <h2 class="section-title">Nuestras Actividades</h2>
+                
+                <div class="activities-grid">
+                    <div class="activity-card" data-activity="adoracion">
+                        <div class="activity-icon">🎵</div>
+                        <h3>Adoración</h3>
+                        <p>Tiempo de adoración y alabanza</p>
+                    </div>
+                    
+                    <div class="activity-card" data-activity="oracion">
+                        <div class="activity-icon">🙏</div>
+                        <h3>Oración</h3>
+                    </div>
+                    
+                    <div class="activity-card" data-activity="dinamica">
+                        <div class="activity-icon">👥</div>
+                        <h3>Dinámica</h3>
+                        <p>Actividades grupales dinámicas</p>
+                    </div>
+                    
+                    <div class="activity-card" data-activity="disfraces">
+                        <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/e213cf5c-dbb8-4bcb-a3f9-5df01b61dd90.png" alt="Paloma Azul" class="activity-image">
+                        <h3>Disfraces</h3>
+                        <p>Presentación de disfraces temáticos</p>
+                    </div>
+                    
+                    <div class="activity-card" data-activity="refrigerio">
+                        <div class="activity-icon">🍽️</div>
+                        <h3>Refrigerio especial</h3>
+                        <p>Compartir de alimentos especiales</p>
+                    </div>
+                </div>
+                
+                <!-- Detalles especiales de disfraces -->
+                <div class="activity-details hidden" id="disfraces-detail">
+                    <div class="costume-section">
+                        <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/e213cf5c-dbb8-4bcb-a3f9-5df01b61dd90.png" alt="Logo Paloma Azul" class="costume-logo">
+                        <h3>¡Ven Disfrazado!</h3>
+                        <p>Te invitamos a participar con disfraces temáticos. ¡Será una noche especial llena de creatividad y diversión!</p>
+                        <div class="costume-theme">
+                            <p>Tema: <strong>Celebración de Fe</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <h3>¡Te esperamos!</h3>
+                    <p>Será una noche inolvidable de comunión y celebración</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Cargar JavaScript al final -->
+    <script src="app.js"></script>
+</body>
+</html>
